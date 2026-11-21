@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafb;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth 3D card depth utilities using GPU-only transform */
+.perspective-stage {
+  perspective: 1100px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .tilt-card-surface {
+    transform: none !important;
+    transition: none !important;
+  }
+}

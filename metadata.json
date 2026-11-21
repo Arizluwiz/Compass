@@ -1,0 +1,6 @@
+{
+  "name": "Compass",
+  "description": "A clear, factual travel guide showcasing Urdaneta, Bolinao, and Natividad in Pangasinan, Philippines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
